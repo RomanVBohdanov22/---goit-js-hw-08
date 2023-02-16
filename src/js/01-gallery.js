@@ -1,9 +1,9 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Описаний в документації
-import SimpleLightbox from "simplelightbox";
+import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
-import "simplelightbox/dist/simple-lightbox.min.css";
+import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
 
 console.log(galleryItems);
@@ -24,17 +24,19 @@ const galleryMurkup = galleryItems
     </li>
 `;
   })
-    .join('');
-  
+  .join('');
+
 gallery.insertAdjacentHTML('afterbegin', galleryMurkup);
 
 console.log(gallery);
 
-var lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: "alt",}); 
+var lightbox = new SimpleLightbox('.gallery a', {
+  captionDelay: 250,
+  captionsData: 'alt',
+});
 
 //var lightbox = new SimpleLightbox('.gallery a'); //, { captionDelay: 250, captionsData: "alt",});
 
 /*lightbox.on('show.simplelightbox', function () {
 	// Do something…
 });*/
-
