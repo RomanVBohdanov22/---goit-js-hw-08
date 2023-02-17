@@ -5,6 +5,7 @@ import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
+//npm install simplelightbox
 
 console.log(galleryItems);
 
